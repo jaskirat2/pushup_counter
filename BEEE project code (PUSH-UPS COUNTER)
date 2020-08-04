@@ -31,16 +31,7 @@ void loop() {
 
   distance=duration*0.034/2;
   if(distance==10){
-    if(count%2==0){
-      count++;
-      digitalWrite(6,HIGH);
-      delay(50);
-      digitalWrite(6,LOW);
-      lcd.clear();
-      lcd.print("count is  ");
-      lcd.print(count/2);
-      delay(1000);
-    }
+    if(count%2==0)
     else{
       count++;
     }
